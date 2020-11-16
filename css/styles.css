@@ -1,0 +1,210 @@
+:root {
+  --yellow-color:#f7df1e;
+  --dark-color:#222;
+  --bg-dark:#1c1c1c;
+  --bg-light:#f7f7f7;
+  --text-light:#737596;
+  --main-font:'Open Sans', sans-serif;
+}
+  
+
+/*----------------------
+        BASE
+-----------------------*/
+*,
+*::before,
+*::after{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-size: 16px;
+  font-family: var(--main-font);
+}
+  
+img{
+  max-width: 100%;
+}
+  
+li{
+  list-style: none;
+}
+  
+a{
+  text-decoration: none;
+}
+  
+
+/*----------------------
+        MENU
+-----------------------*/
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  position: absolute;
+  z-index: 10;
+}
+  
+.nav-list {
+  display: inherit;
+}
+  
+.nav-item {
+  margin-right: 1rem;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+
+@media screen and (min-width:1440px){
+  .nav{
+    justify-content:flex-end;
+  }
+
+  .nav-item {
+    margin-right: 2rem;
+  }
+
+  .nav-link{
+    font-size: 1rem;
+  }
+}
+
+
+/*----------------------
+        BANNER
+-----------------------*/
+  
+.banner {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  background-color: var(--bg-dark);
+  color: #fff;
+}
+
+
+.title{
+  margin: 5rem 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+  
+.banner-title {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+  
+.banner-text {
+  color: #eaeaea;
+  font-size: 0.8rem;
+  width: 80%;
+}
+  
+.banner-icons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+}
+  
+.fa-search {
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  padding: 0 1.5em;
+}
+  
+.fa-envelope,
+.fa-shopping-cart {
+  margin-bottom: 1rem;
+  padding: 0.5em 1em 0.5em 0.5em;
+  background-color: #fff;
+  color: #444;
+
+}
+  
+
+@media screen and (min-width:1440px){
+  .banner-title{
+    font-size: 3.5rem;
+  }
+
+  .banner-text{
+    font-size: 1.2rem;
+  }
+
+  .fa-envelope,
+  .fa-shopping-cart {
+    cursor: pointer;
+
+  }
+  
+}
+
+
+/*----------------------
+        CARDS
+-----------------------*/
+
+.cards{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+@media screen and (min-width:720px){
+  .cards{
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  
+}
+
+.card{
+  display: inline-block;
+  width: 20rem;
+  height: 28rem;
+  background-color: var(--bg-light);
+  margin-bottom: 1.5rem;
+}
+
+.card-body{
+    padding: 2em;
+  
+}
+
+.card-title{
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.card-description{
+  color: var(--text-light);
+}
+
+
+/*----------------------
+        LAYOUT
+-----------------------*/
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
